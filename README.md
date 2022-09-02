@@ -28,6 +28,7 @@
 - JSON Imports
 - Sass
 - Webpack 5
+- Mocha
 
 Simply remove or don't use the technologies you don't like.
 
@@ -64,6 +65,7 @@ For Disabling TS
 
 - Just change file extensions ts to js and tsx to jsx
 - Change all ts to js and tsx to jsx in `webpack/base.js`
+- Change all instances of `**/*.ts` to `**/*.js` in `package.json`
 
 For Preact builds
 
@@ -125,6 +127,9 @@ npm run build:chrome
 
 # Run Tests with Mocha
 npm run test
+
+# Run tests with Mocha in watch mode
+npm run test-watch
 
 # Clean Builds
 npm run clean
